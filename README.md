@@ -1,79 +1,127 @@
-# AzunTech-Sales-Challenge
+# Insights for New Product Launch Strategy - Power BI
+- This project is a part of [Codebasics](https://codebasics.io/challenge/codebasics-resume-project-challenge) Resume Project challenge #8: Provide Insights to the Product Strategy Team in the Banking Domain
 
+- Link to [Portfolio Website](https://codebasics.io/portfolio/RISHABH-BHARADWAJ)
+- Link to [Live Dashboard](https://project.novypro.com/fSyugz)
 
-## AzunTechTech Sales Snapshot: CRM-driven Performance Dashboard
-### Visualise Team and Individual Performance: 2017 Quarterly Insights with Power BI
+## Problem statement
 
-### Data
-This dataset, available on [AzunTech Analytics](https://AzunTechanalytics.io/data-playground), contains B2B sales opportunities from a CRM database for a fictitious company (AzunTechTech) that sells computer hardware, including information on accounts (customers), products sold, sales teams, and sales opportunities (sales pipeline data).
+Mitron Bank is a legacy financial institution headquartered in Hyderabad. They want to introduce a new line of credit cards, aiming to broaden its product offerings and reach in the financial market. 
 
-The data model was simple, and the dataset did not need much cleaning except for a couple of things:
-- In the sales pipeline table, I changed the product name from "GTXPro" to "GTX Pro" to ensure consistency when merging the sales pipeline and product tables. A simple find and replace value within Power Query was sufficient. 
-- I did a basic merge of the sales pipeline and product tables using the related "product" column to align the data.
-- Furthermore,  I merged the sales teams with the sales pipeline table based on the sales agent column to integrate relevant information on managers. I also merged the accounts table with the sales pipeline using the account column.
+AtliQ Data Services came to know about this through an internal link and approached Mitron Bank with a proposal to implement this project. However, the strategy director of Mitron Bank, Mr. Bashnir Rover is skeptical and asked them to do a pilot project with the sample data before handing over the full project. They provided a sample dataset of 4000 customers across five cities on their online spending and other details. 
 
-I used Power BI to build the dashboard. Find it [here](https://github.com/umasreeakula/AzunTech-Sales-Challenge/blob/main/AzunTechTech%20-%20Quarterly%20Sales%20Team%20Performance.pbix).
+As a data analyst, my role is to analyze the provided sample data and report key findings to the strategy team of Mitron Bank. This analysis is expected to guide them in tailoring the credit cards to customer needs and market trends. 
+The successful acquisition of this project depends on my ability to provide actionable, data-driven recommendations and impress Mr. Bashnir Rover & his team.
 
-### Business Scenario:
-AzunTechTech is a company based in the United States that sells computer hardware to large businesses. Recently, AzunTechTech implemented a new CRM system to manage its sales opportunities. However, the company faces a challenge: limited visibility of the sales data beyond the CRM platform.
-As a BI Developer for AzunTechTech, I have developed an interactive dashboard to enable sales managers to track their team's quarterly performance effectively. AzunTechTech can now extract valuable insights from sales data from the CRM system, making it easier to make data-driven decisions.
+### Task List
+You are a data analyst who has been provided with sample data to work on the following tasks.
+- Design a dashboard with your metrics and analysis. The end users of this dashboard are top-level management and the product strategy team - hence the dashboard should be self-explanatory and easy to understand.
+- Present your insights to stakeholders. Be creative and concise with your presentation.
+- Use your dashboard in the presentation along with the deck.
+- Use additional data based on your research to support your recommendations. 
 
-#### Assumptions:
-- The dashboard prioritises detailed performance insights at an individual level, reflecting the assumption that sales managers are primarily concerned with assessing the performance of team members. This approach allows for benchmarking individuals against each other.
-- Teams can access each other's performance data, enabling comparative analysis to assess relative performance across teams.
-- Managers would like to track the team's performance quarter to quarter. The dashboard allows managers to retrospectively analyse performance over the year, organised by quarters, to track and evaluate long-term progress effectively.
+## Data Model
 
-The dashboard is user-friendly and includes help tooltips and text for interpreting the graphs, metrics and how to access information from them.
+<p align="center">
+    <img src='https://github.com/amoghsawant17/Insights_Product_Strategy/blob/main/view_snaps/data_model.png' height="400">
+</p>
 
-### What information is available to managers in the dashboard?
-- Quarterly Performance Overview: The dashboard provides a comprehensive overview of a team's performance for each quarter, including the performance of each sales agent, which, when compared with team performance metrics, will enable managers to identify top performers, areas for improvement, and coaching opportunities.
-- Individual Sales Rep Performance: Sales managers can evaluate the performance of individual sales agents through a variety of metrics, including:
-	- Total sales
-	- Number of deals closed (won and lost)
-	- Win rates
-	- Average deal size
-	- Average time taken to win and close deals
+## Overview
+
+<p align="center">
+    <img src='https://github.com/amoghsawant17/Insights_Product_Strategy/blob/main/view_snaps/snap_overview.png' width="600">
+</p>
+
+## Monthly Analysis View
+
+<p align="center">
+    <img src='https://github.com/amoghsawant17/Insights_Product_Strategy/blob/main/view_snaps/snap_ma.png' width="600">
+</p>
+
+## Support View
+
+<p align="center">
+    <img src='https://github.com/amoghsawant17/Insights_Product_Strategy/blob/main/view_snaps/snap_support.png' width="600">
+</p>
+
+## Feedback View
+
+<p align="center">
+    <img src='https://github.com/amoghsawant17/Insights_Product_Strategy/blob/main/view_snaps/snap_fb.png' width="600">
+</p>
+
+## Attribution View
+
+<p align="center">
+    <img src='https://github.com/amoghsawant17/Insights_Product_Strategy/blob/main/view_snaps/snap_at.png' width="600">
+</p>
+
+## Things that I learned from this Project
+- I Learned, how to use bookmarks and selection for different purposes. (Page navigation and a clear filter button in the dashboard were achieved using bookmarks and selection same as a website page navigation.
+- Tried using the color palette and sticking with those colors throughout the dashboard ([Color palette link](https://colorhunt.co/palette/0766ad29adb2c5e898f3f3f3))
+
+## Some Key Metrics
+
+## Some Important insights from the Dashboard
+- Mumbai ranks top among cities in terms of overall average monthly spending of 27.8 Million ₹, while Hyderabad has the lowest average monthly spending of 10.9 Million ₹.
+- Overall Income Utilization % is highest in Mumbai with 49.9% and lowest in Chennai with 30.2%.
+- Overall Credit card spending is highest in Mumbai with 11.2 Million ₹ and lowest in Hyderabad with 4.4 Million ₹.
+- Credit card, with a 40.6% share in overall average monthly spending, is the most popular payment mode, followed by UPI with a 26.5% share and Debit card with a 22.5% share.
+- Salaried IT employees have the highest overall average monthly spending of 39.4 Million ₹, followed by Business owners with 14.2 Million ₹, and Freelancers with 12.2 Million ₹.
+- Overall Income Utilization % is higher in male customers with 43.2% compared to female customers with 38.5%.
+- The 35-45 age group has the highest Overall Income Utilization % at 45.3%, followed by the 25-34 age group with 42.3%, and the 21-24 age group with 39.4%. However, the Overall average monthly spending is highest in the 25-34 age group due to a higher number of people from this group in this dataset.
+- Overall monthly spending, Income Utilization %, and Credit card spending are higher in August and September compared to the rest of the months.
+- From May to October, the overall average monthly spending on the Bills category is the highest, followed by the Groceries and Electronics categories.
+- Overall average monthly credit card spending is highest in Bills, followed by Electronics, and Health and wellness categories.
+- Overall average monthly credit card spending is highest in the 25-34 age group with 15.3 Million ₹, followed by the 35-45 age group with 11.9 Million ₹.
+- Overall monthly spending is higher for male customers at 67.3% compared to female customers at 32.7%.
+- Overall monthly spending is higher for married customers, accounting for around 80%, compared to single customers with 20%.
+- Spending patterns in various categories and through different payment types differ based on age group, gender, and marital status.
+- ► For the 25-34 age group,
+- males, whether single or married, have the top three monthly spending categories: Bills, Groceries, and Electronics.
+- Females, whether single or married, have the top three monthly spending categories: Bills, Travel, and Health & Wellness.
+- ► For the 35-45 age group,
+- males, whether single or married, have the top three monthly spending categories: Bills, Groceries, and Electronics.
+- Females, whether single or married, have the top three monthly spending categories: Health and wellness, Bills, and Groceries.
  
-The dashboard also offers an overview of the percentage of discounted opportunities by each individual, followed by the average discount percentage they have given away, providing insights into which individuals give away a higher proportion of sales in discounts. Understanding the discounts offered can demonstrate their impact on the average opportunity size.
+## Potential Decisions
+1. **Tailored Credit Card Offers:** Develop customized credit card offers for the 25-34 age group, focusing on their top spending categories such as Bills, Groceries, and Electronics. This can attract a younger demographic and encourage higher credit card usage.
 
-- Deal Pipeline Analysis: Managers can explore the overall sales pipeline to understand the distribution of deals across various stages (e.g., prospecting, engaging, closed-won, closed-lost), helping them prioritise efforts and allocate resources efficiently.
-- Product Sales: Managers can obtain a comprehensive overview of product sales for each quarter, including insights into the number of products sold within their opportunities, the number of product deals lost and discounts offered.
-- Performance by Sales Teams: Managers can view where they stand relative to other teams in performance in each metric.
-- Quarter-over-Quarter Performance Summary: Managers can gain insights into the overall team's performance changes quarter-over-quarter. They can also delve into each sales agent's quarter-over-quarter performance, examining total sales, deals won, win rates, average deal size, and the time taken to close winning deals. 
+2. **Marketing Campaigns for August and September:** Leverage the higher spending patterns observed in August and September by launching targeted marketing campaigns during these months. Promotions, discounts, or rewards during this period can further boost credit card usage and attract new customers.
 
-The dashboard also highlights the number of deals lost by the team and individual members, alongside the wins. Managers can view these in a table by clicking the right arrow (->) near the team's closed deals visual on the first page of the dashboard. It also includes the open opportunities and potential sales amount (click on "View Opportunities" to view these) for each team to give an overview of the impact these have.
+3. **Diversify Credit Card Features:** Introduce credit card features and rewards that align with the spending preferences of different age groups and genders. For example, offer travel-related perks for females in the 25-34 age group who prioritize Travel as a spending category.
 
-### Key Metrics:
-Based on the available data, I selected the following sales metrics for performance comparison:
-- Sales: Income received from the sales of the hardware products.
-- Wins: These are deals that result in a purchase of the product. How many deals do they need to land to meet targets?
-- Win-Rate: How well can the agents in the team conclude negotiations and make a sale? This metric is calculated by dividing the number of wins by the total of closed (both won and lost) deals.
-- Average Deal/Opportunity Size: Calculated by dividing the total value of every deal by the number of deals won within the quarter. It measures the size of incoming sales opportunities.
-- Average Time to Close (successful deals only): The time taken to close a winning deal from initial contact. Faster closures mean more time is available to pursue additional deals.
+4. **Special Credit Card for Salaried IT Employees:** Create a specialized credit card with exclusive benefits for salaried IT employees, who exhibit the highest overall average monthly spending. Tailor rewards, cashback, or loyalty programs to cater to their specific needs and preferences.
 
-These metrics enable managers to gauge the effectiveness of their team's and agents' sales strategy and process in successfully closing deals and identifying particular strengths and opportunities on the team.
+5. **Promote Family-oriented Credit Card Features:** Capitalize on the higher spending observed in the 35-45 age group, especially for health and wellness. Introduce family-oriented credit card features, such as health insurance or wellness-related rewards, to appeal to this demographic.
 
-### The Dashboard:
-The dashboard's first page is a detailed summary of the team's and the sales reps' performances for the selected quarter. Managers can utilise two drop-down menus—one for choosing their name and the other for choosing a quarter. Upon selecting/hovering over a visual, managers can hover over it to find a tooltip (represented by a question mark) for assistance in interpreting the visual.
-The card at the top represents the team's averages for the key metrics, serving as benchmarks to evaluate individual team members' performance. It also includes the previous quarter's metrics to help managers compare performance. The tables and accompanying graphs summarise the sales agents' quarter performance. To view their specific results, clicking on a sales agent's name in the first graph will update the other charts and tables accordingly.
-The graph depicting pipeline stages offers an overview of the pipeline at the end of the year, along with open opportunities.
+6. **Targeted Marketing for Electronics Category:** Since Electronics is a prominent spending category, develop targeted marketing campaigns around the purchase of electronic goods. Offer discounts, extended warranties, or exclusive deals for credit card users in this category.
 
-![Quarterly Performance Snapshot](https://github.com/umasreeakula/AzunTech-Sales-Challenge/assets/163797397/b43a8ff9-14f0-4105-b3bc-b9c75942fb1c)
+7. **Expand Credit Card Acceptance:** Work on expanding the acceptance of the bank's credit cards at more merchants and outlets. A wider acceptance network can encourage existing customers to use their credit cards more frequently and attract new users.
 
-The closed deals table from the right arrow button near the team's closed deals card:
+8. **Educational Campaigns on Credit Card Benefits:** Launch educational campaigns to inform customers about the benefits and advantages of using credit cards, particularly focusing on the advantages in Bills, Groceries, and Electronics categories. This can dispel misconceptions and encourage more customers to adopt credit card usage.
 
-![Closed Deals](https://github.com/umasreeakula/AzunTech-Sales-Challenge/assets/163797397/c34d89f7-682a-4cc4-b349-f0ac9cdd9a51)
+9. **Market Research on Emerging Spending Categories:** Stay updated on emerging spending trends and adjust credit card offerings accordingly. Conduct regular market research to identify new categories gaining popularity, and introduce credit card features that align with these evolving consumer preferences.
 
-The open opportunities table from the "View Opportunities" button on the Potential Sales card:
+10. **Enhance Credit Card Visibility in Digital Channels:** Recognizing the growing popularity of digital transactions, prioritize the online promotion and visibility of the new line of credit cards. Collaborate with popular digital platforms, optimize the bank's website for easy credit card exploration, and run targeted online marketing campaigns to create awareness and attract potential customers to the new credit card offerings.
 
-![Open Opps](https://github.com/umasreeakula/AzunTech-Sales-Challenge/assets/163797397/b30595a8-665d-40f3-83ab-7a18483fbeed)
+## Credit Card Feature Recommendations
+1. **Category-Specific Rewards:**
+   - Recommendation: Implement a rewards structure that offers higher cashback, discounts, or loyalty points for spending in categories such as Bills, Groceries, Electronics, and Health & Wellness, which were identified as top spending categories across age groups and genders.
+   - Rationale: Aligning rewards with observed spending patterns encourages users to choose the credit card for their routine and major expenses, increasing overall card usage.
 
-The second page provides an overview of performance by every team in each metric. Managers can observe where their team ranks relative to others in performance by the metric for every quarter if they'd like to know.
+2. **Family-centric Benefits:**
+   - Recommendation: Introduce family-oriented benefits, such as shared rewards, supplementary card privileges, or exclusive discounts on family-related expenses, targeting the 35-45 age group where family-centric spending, particularly in health and wellness, was prominent.
+   - Rationale: Addressing the specific needs of families can attract and retain customers in the age group that exhibits higher spending in health-related categories.
 
-![Team Performance Comparison](https://github.com/umasreeakula/AzunTech-Sales-Challenge/assets/163797397/e97f8234-f2e1-4f45-9597-ae85fb8c6932)
+3. **Digital Wallet Integration:**
+   - Recommendation: Integrate the credit card seamlessly with popular digital wallets and UPI platforms, as digital payment modes were found to be widely used. Ensure that the credit card is compatible with major digital payment ecosystems to facilitate convenient and versatile transactions.
+   - Rationale: Enhancing the digital presence of the credit card aligns with current consumer preferences, making it more likely for users to incorporate the card into their daily digital transactions.
 
-The third page offers a quarter-over-quarter performance summary for managers to analyse how the team and individual sales agents have performed in the current quarter (selected from the drop-down menu) compared to the previous quarter. Clicking a bar from the team's graphs can highlight the team's performance for that quarter. Clicking on a bar in any of the second set of graphs can highlight the specific results for the individual. 
+4. **Tailored Travel Benefits:**
+   - Recommendation: Incorporate travel-related perks for the 25-34 age group, such as airline miles, hotel discounts, or exclusive travel packages. This addresses the preferences of a demographic that prioritizes travel in their spending habits.
+   - Rationale: Offering travel benefits taps into the interests of a significant consumer segment, potentially increasing credit card usage for both everyday and special expenses.
 
-![QoQ Performance Summary](https://github.com/umasreeakula/AzunTech-Sales-Challenge/assets/163797397/28762c5d-cc07-4477-852c-7eab8340f154)
-
-Graphs on the second and third pages also feature tooltips for additional assistance, similar to the dashboard's first page. These tooltips become available upon selecting or hovering over the visuals, providing helpful information to managers as needed.
+5. **Financial Management Tools:**
+   - Recommendation: Provide users with advanced financial management tools, including budgeting features, spending analytics, and personalized financial advice. This addresses the need for financial awareness identified across age groups and can foster responsible credit card usage.
+   - Rationale: Empowering users with tools to manage their finances aligns with the observed higher income bracket of salaried IT employees and can make the credit card a valuable tool in their financial planning.
