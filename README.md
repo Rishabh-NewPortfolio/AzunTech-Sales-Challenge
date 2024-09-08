@@ -50,11 +50,6 @@ You are a data analyst who has been provided with sample data to work on the fol
     <img src='https://github.com/amoghsawant17/Insights_Product_Strategy/blob/main/view_snaps/snap_fb.png' width="600">
 </p>
 
-## Attribution View
-
-<p align="center">
-    <img src='https://github.com/amoghsawant17/Insights_Product_Strategy/blob/main/view_snaps/snap_at.png' width="600">
-</p>
 
 ## Things that I learned from this Project
 - I Learned, how to use bookmarks and selection for different purposes. (Page navigation and a clear filter button in the dashboard were achieved using bookmarks and selection same as a website page navigation.
